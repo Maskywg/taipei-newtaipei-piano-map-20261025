@@ -1,5 +1,23 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="尋找台北與新北的公共鋼琴：互動地圖、樓層位置、開放時間與現場演奏影片。"><title>雙北琴散步｜公共鋼琴地圖</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="style.css"></head>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="尋找台北與新北的公共鋼琴：互動地圖、樓層位置、開放時間與現場演奏影片。"><title>雙北琴散步｜公共鋼琴地圖</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://maskywg.github.io/taipei-newtaipei-piano-map-20261025/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="雙北琴散步">
+<meta property="og:title" content="雙北琴散步｜台北・新北公共鋼琴地圖">
+<meta property="og:description" content="收錄雙北8台公共鋼琴，查看地圖、開放時間與現場演奏影片。下一站，讓琴聲帶路。">
+<meta property="og:url" content="https://maskywg.github.io/taipei-newtaipei-piano-map-20261025/">
+<meta property="og:image" content="https://maskywg.github.io/taipei-newtaipei-piano-map-20261025/share-cover.jpg">
+<meta property="og:image:secure_url" content="https://maskywg.github.io/taipei-newtaipei-piano-map-20261025/share-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="雙北琴散步，台北與新北公共鋼琴地圖，深綠色鋼琴鍵封面">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="雙北琴散步｜公共鋼琴地圖">
+<meta name="twitter:description" content="雙北8台公共鋼琴・互動地圖・開放時間・現場演奏影片">
+<meta name="twitter:image" content="https://maskywg.github.io/taipei-newtaipei-piano-map-20261025/share-cover.jpg">
+</head>
 <body><header><a class="brand" href="#">♬ 雙北琴散步<span>PIANO WALKS</span></a><nav aria-label="主選單"><a href="#explore">找鋼琴</a><a href="#films">聽現場</a><a href="#about">資料說明</a></nav></header>
 <main><section class="hero"><div><p class="eyebrow">TAIPEI & NEW TAIPEI · PUBLIC PIANOS</p><h1>下一站，<br>讓琴聲帶路<span>。</span></h1><p class="intro">從車站大廳到城市角落，<br>找一台公共鋼琴，聽見雙北的日常。</p><a class="primary" href="#explore">展開鋼琴地圖 <span>↗</span></a><div class="hero-meta">7 個場域 <i></i> 8 台鋼琴 <i></i> 2026.10.25 查詢整理</div></div><div class="piano-art" aria-hidden="true"><div class="orbit"></div><div class="art-label">A LITTLE MUSIC,<br>A LITTLE DETOUR.</div><div class="keys"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="black-keys"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-caption">♩ 城市，就是你的演奏廳</div></div></section>
 <section id="explore" class="explore"><div class="section-head"><div><p class="eyebrow">01 / FIND YOUR PIANO</p><h2>一張地圖，找到下一段旋律</h2></div><p>點地圖標記或地點卡片，查看室內位置與導航。</p></div><div class="filters" aria-label="城市篩選"><button class="active" data-city="all" aria-pressed="true">全部雙北 <span>8</span></button><button data-city="台北" aria-pressed="false">台北市 <span>6</span></button><button data-city="新北" aria-pressed="false">新北市 <span>2</span></button><label class="search">⌕ <input id="search" placeholder="搜尋地點、行政區" aria-label="搜尋地點、行政區"></label></div><div class="map-layout"><div class="map-wrap"><div id="map" aria-label="雙北公共鋼琴互動地圖"></div><p class="map-note">場域概略定位，非室內鋼琴精確座標。大巨蛋兩台共用場域定位。</p></div><aside id="detail" aria-live="polite"></aside></div><div class="results-meta"><span id="result-count"></span><span>● 官方設置資料　 ◌ 社群整理／前往前確認</span></div><div id="places" class="places"></div><p id="empty" hidden>找不到符合的地點，請換個關鍵字。</p></section>
